@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h1>{{ projek2.judul }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        <img src="{% static projek2.gambar %}" alt="" width="100%" />
+    </div>
+    <div class="col-md-4">
+        <p>{{ projek2.desk }}</p>
+        <br />
+        <h5> Menggunakan teknik</h5>
+        <p>{{ projek2.teknik }}</p>
+    </div>
+</div>
+{% endblock %}
